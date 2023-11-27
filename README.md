@@ -1,8 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my personal portfolio that will serve primarily as a photography portfolio and secondarily as a web developer portfolio.
+In the future, when I purchase another domain, I should separate these two portfolios.
 
-## Getting Started
+## Getting Started Locally
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,20 +15,18 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Deployment on Git
 
-To learn more about Next.js, take a look at the following resources:
+In order to deploy this reposity to GitHub pages, go through these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    push up your changes
+    run npm run deploy
+        this runs npm run build&&gh-pages -d build
+    then go to this repo on GitHub and navigate to the Settings tab
+    in the left column, click on the Pages tab
+    the Custom domain will be reset to the default github pages * change it back to my domain and click Save
 
 ## Deploy on Vercel
 
