@@ -36,7 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## To Do List
 
-- [ ] Download a responsive masonry image library (react-responsive-masonry)
+- [x] Download a responsive masonry image library (react-responsive-masonry)
 - [ ] Put test images in the public folder
 - [ ] Display a single image with the react responsive masonry
 - [ ] add a nav bar
@@ -46,3 +46,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] add a profile image
 - [ ] add a skills section
 - [ ] add a social links section
+- [x] add a css library for styling
