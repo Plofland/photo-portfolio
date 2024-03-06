@@ -39,6 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [x] Put test images in the public folder
 - [x] Display a single image with the react masonry
 - [x] Display a single image with the react responsive masonry
+- [x] once it's working, make the masonry its own component
 - [ ] add a nav bar
 - [ ] add routing to make nav bar functional
 - [ ] add an about me
