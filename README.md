@@ -1,5 +1,4 @@
 This is my personal portfolio that will serve primarily as a photography portfolio and secondarily as a web developer portfolio.
-In the future, when I purchase another domain, I should separate these two portfolios.
 
 ## Getting Started Locally
 
@@ -22,8 +21,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 In order to deploy this reposity to GitHub pages, go through these steps:
 
 - push up your changes
-- run npm run deploy
-    - this runs npm run build&&gh-pages -d build
+- run `npm run deploy`
+    - this runs `npm run build&&gh-pages -d build`
 - then go to this repo on GitHub and navigate to the Settings tab
 - in the left column, click on the Pages tab
 - the Custom domain will be reset to the default github pages * change it back to my domain and click Save
@@ -37,7 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## To Do List
 
 - [x] Download a responsive masonry image library (react-responsive-masonry)
-- [ ] Put test images in the public folder
+- [x] Put test images in the public folder
 - [ ] Display a single image with the react responsive masonry
 - [ ] add a nav bar
 - [ ] add routing to make nav bar functional
