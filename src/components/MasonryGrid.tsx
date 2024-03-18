@@ -16,6 +16,7 @@ const photos = [
 	'/photos/19.jpg'
 ];
 
+
 const MasonryGrid = () => {
 	return (
 		<ResponsiveMasonry

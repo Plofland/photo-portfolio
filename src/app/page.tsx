@@ -17,3 +17,4 @@ const MasonryContainer = styled.div`
 	width: 66vw;
 	border: 1px solid blue;
 `;
+
