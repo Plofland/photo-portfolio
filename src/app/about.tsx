@@ -1,14 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const About = () => {
 	return (
-		<div>
+		<TextContainer>
 			<p>
-				I'm a software developer & photographer with
-				experience and interest in the tech startup
-				scene in New York City. I love working with
-				newer technologies and building towards the
-				future.
+				I am a software developer & photographer
+				with experience and interest in the tech
+				startup scene in New York City. I love
+				working with newer technologies and building
+				towards the future.
 			</p>
 			<p>
 				I always love learning anything about
@@ -16,10 +17,14 @@ const About = () => {
 				framework, workflow enhancement or a new
 				language. I particularly relish working in a
 				group but am adept at working independently
-				to find my own solutions.
 			</p>
-		</div>
+		</TextContainer>
 	);
 };
 
 export default About;
+
+const TextContainer = styled.div`
+	display: flex;
+    flex-direction: column;
+`;
