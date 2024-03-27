@@ -27,7 +27,6 @@ const Navbar = () => {
 
 			<NavItem
 				href="/contact"
-				target="_blank"
 				rel="noopener noreferrer"
 			>
 				<NavName>Contact</NavName>
