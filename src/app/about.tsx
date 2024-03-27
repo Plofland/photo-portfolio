@@ -13,7 +13,7 @@ const About = () => {
 			</p>
 			<p>
 				I always love learning anything about
-				software engineering whether it's a tool,
+				software engineering whether it&apos;s a tool,
 				framework, workflow enhancement or a new
 				language. I particularly relish working in a
 				group but am adept at working independently
