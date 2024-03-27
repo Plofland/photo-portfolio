@@ -5,17 +5,20 @@ import Masonry, {
 
 //rearrange these to change the order of the photos
 const photos = [
-	'/photos/18.jpg',
-	'/photos/15-7x5-small-fav.jpg',
-	'/photos/18-golf-swing.jpg',
-	'/photos/28-small-4x5-1.jpg',
 	'/photos/29-4x5-small.jpg',
-	'/photos/31-small.jpg',
-	'/photos/37-4x5-small.jpg',
-	'/photos/19.jpg',
-	'/photos/19.jpg'
+	'/photos/15-7x5-small-fav.jpg',
+	'/photos/13--f1.4-1_8sec4x5.jpg',
+	'/photos/PAL_0827.jpg',
+	'/photos/PAL_1477-2.jpg',
+	'/photos/18.jpg',
+	'/photos/PAL_1730_4x5_headshot.jpg',
+	'/photos/18-golf-swing.jpg',
+	'/photos/PAL_1985.jpg',
+	'/photos/PAL_1990.jpg',
+	'/photos/PAL_2078.jpg',
+	'/photos/PAL_0782-1x1.jpg'
+	
 ];
-
 
 const MasonryGrid = () => {
 	return (
