@@ -2,6 +2,7 @@
 import styles from './page.module.css';
 import styled from 'styled-components';
 import MasonryGrid from '@/components/MasonryGrid';
+import Navbar from '@/components/Navbar';
 //todo get this library ⬇️
 // import { Squash as Hamburger } from 'hamburger-react';
 
@@ -40,4 +41,3 @@ const MasonryContainer = styled.div`
 // 			? 'rgba(55, 55, 55, 0.8)'
 // 			: 'rgba(0, 0, 0, 0)'};
 // `;
-
