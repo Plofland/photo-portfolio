@@ -15,6 +15,6 @@ export default function Home() {
 
 const MasonryContainer = styled.div`
 	width: 66vw;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 `;
 
