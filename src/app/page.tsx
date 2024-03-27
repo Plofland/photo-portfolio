@@ -19,7 +19,7 @@ export default function Home() {
 				</MobileMenuIcon>
 				{isOpen && <p>TRUE</p>}
 				{isOpen && <MobileNavMenu />} */}
-			{/* <Navbar /> */}
+			<Navbar />
 			<MasonryContainer>
 				<MasonryGrid />
 			</MasonryContainer>

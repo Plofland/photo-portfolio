@@ -10,12 +10,6 @@ const Navbar = () => {
 				rel="noopener noreferrer"
 			>
 				<NavName>About</NavName>
-				<SubMenuContainer>
-					<SubMenu>
-						<SubMenuItem>Number 1</SubMenuItem>
-						<SubMenuItem>Number 2</SubMenuItem>
-					</SubMenu>
-				</SubMenuContainer>
 			</NavItem>
 
 			<NavItem
@@ -23,24 +17,12 @@ const Navbar = () => {
 				rel="noopener noreferrer"
 			>
 				<NavName>Projects</NavName>
-				<SubMenuContainer>
-					<SubMenu>
-						<SubMenuItem>Number 1</SubMenuItem>
-						<SubMenuItem>Number 2</SubMenuItem>
-					</SubMenu>
-				</SubMenuContainer>
 			</NavItem>
 			<NavItem
 				href="/services"
 				rel="noopener noreferrer"
 			>
 				<NavName>Service</NavName>
-				<SubMenuContainer>
-					<SubMenu>
-						<SubMenuItem>Number 1</SubMenuItem>
-						<SubMenuItem>Number 2</SubMenuItem>
-					</SubMenu>
-				</SubMenuContainer>
 			</NavItem>
 
 			<NavItem
@@ -49,12 +31,6 @@ const Navbar = () => {
 				rel="noopener noreferrer"
 			>
 				<NavName>Contact</NavName>
-				<SubMenuContainer>
-					<SubMenu>
-						<SubMenuItem>Number 1</SubMenuItem>
-						<SubMenuItem>Number 2</SubMenuItem>
-					</SubMenu>
-				</SubMenuContainer>
 			</NavItem>
 		</Container>
 	);
@@ -67,14 +43,15 @@ const Container = styled.div`
 	grid-template-columns: repeat(4, minmax(25%, auto));
 	max-width: 100vw;
 	width: 100%;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: flex-end;
+	margin-bottom: 2em;
 	/* border: 2px solid white; */
 `;
 
 const NavName = styled.h2`
-    position: relative;
-    
+	position: relative;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -86,17 +63,11 @@ const NavName = styled.h2`
 		transition: width 0.7s ease;
 	}
 
-    &:hover:before {
-        width: 100%;
+	&:hover:before {
+		width: 100%;
 	}
 
-    /* border: 1px solid yellowgreen; */
-`;
-
-const SubMenuContainer = styled.div`
-	/* position: absolute; */
-	/* top: 100%; */
-	/* left: 0%; */
+	/* border: 1px solid yellowgreen; */
 `;
 
 const NavItem = styled(Link)`
@@ -110,32 +81,5 @@ const NavItem = styled(Link)`
 
 	h2 {
 		margin: 0;
-	}
-
-	&:hover ${SubMenuContainer} {
-		/* Show the SubMenuContainer on hover */
-		height: auto;
-	}
-`;
-
-const SubMenu = styled.ul`
-	background-color: rgba(169, 169, 169, 0.5);
-	opacity: 0; /* Initially hidden */
-	pointer-events: none; /* Initially not clickable */
-	transition: opacity 0.3s ease;
-
-	${NavItem}:hover & {
-		opacity: 1; /* Show the submenu when SubMenuContainer is hovered */
-		pointer-events: auto;
-	}
-`;
-
-const SubMenuItem = styled.li`
-	padding: 0.5em;
-	color: white;
-	cursor: pointer;
-
-	&:hover {
-		background-color: rgba(255, 255, 255, 0.2);
 	}
 `;
