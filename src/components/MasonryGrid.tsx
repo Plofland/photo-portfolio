@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Masonry, {
 	ResponsiveMasonry
 } from 'react-responsive-masonry';
+import styled from 'styled-components';
 
 //rearrange these to change the order of the photos
 const photos = [

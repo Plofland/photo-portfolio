@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
@@ -5,13 +6,15 @@ import styled from 'styled-components';
 const Navbar = () => {
 	return (
 		<Container>
+			<NavItem href="/" rel="noopener noreferrer">
+				<NavName>Portfolio</NavName>
+			</NavItem>
 			<NavItem
 				href="/about"
 				rel="noopener noreferrer"
 			>
 				<NavName>About</NavName>
 			</NavItem>
-
 			<NavItem
 				href="/projects"
 				rel="noopener noreferrer"
@@ -24,7 +27,6 @@ const Navbar = () => {
 			>
 				<NavName>Service</NavName>
 			</NavItem>
-
 			<NavItem
 				href="/contact"
 				rel="noopener noreferrer"
@@ -44,7 +46,7 @@ const Container = styled.div`
 	width: 100%;
 	justify-content: center;
 	align-items: flex-end;
-	margin-bottom: 2em;
+	margin: 6em 0 2em 0;
 	/* border: 2px solid white; */
 `;
 

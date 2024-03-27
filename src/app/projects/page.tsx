@@ -1,9 +1,18 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import styled from 'styled-components';
 
 const Projects = () => {
-  return (
-    <div>Projects - WIP</div>
-  )
-}
+	return (
+		<ProjectsContainer>
+			Projects - WIP
+		</ProjectsContainer>
+	);
+};
 
-export default Projects
+export default Projects;
+
+const ProjectsContainer = styled.div`
+	display: flex;
+	justify-content: center;
+`;

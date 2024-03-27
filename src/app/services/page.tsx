@@ -1,9 +1,18 @@
-import React from 'react'
+'use client';
+import React from 'react';
+import styled from 'styled-components';
 
 const Services = () => {
-  return (
-    <div>Services - WIP</div>
-  )
-}
+	return (
+		<ServicesContainer>
+			Services - WIP
+		</ServicesContainer>
+	);
+};
 
-export default Services
+export default Services;
+
+const ServicesContainer = styled.div`
+	display: flex;
+	justify-content: center;
+`;
