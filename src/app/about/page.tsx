@@ -11,9 +11,15 @@ const About = () => {
 					src="/photos/B&WHeadshot.jpg"
 					width={400}
 					height={500}
-					alt=""
+					alt="Black and white headshop of Peter looking off camera"
 				/>
 			</Headshot>
+			<Image
+				src="/photos/B&WHeadshot.jpg"
+				width={400}
+				height={500}
+				alt="Black and white headshop of Peter looking off camera"
+			/>
 
 			<TextContainer>
 				<Paragraph>
