@@ -11,12 +11,12 @@ const photos = [
 	'/photos/13--f1.4-1_8sec4x5.jpg',
 	'/photos/PAL_0827.jpg',
 	'/photos/PAL_1477-2.jpg',
+	'/photos/PAL_1990.jpg',
 	'/photos/18.jpg',
 	'/photos/18-golf-swing.jpg',
 	'/photos/PAL_1985.jpg',
 	'/photos/PAL_0782-1x1.jpg',
-	'/photos/PAL_2078.jpg',
-	'/photos/PAL_1990.jpg'
+	'/photos/PAL_2078.jpg'
 ];
 
 const MasonryGrid = () => {
