@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import styled from 'styled-components';
 import MasonryGrid from '@/components/MasonryGrid';
 import Navbar from '@/components/Navbar';
-//todo get this library ⬇️
+//todo get this library for responsive navbar ⬇️
 // import { Squash as Hamburger } from 'hamburger-react';
 
 export default function Home() {

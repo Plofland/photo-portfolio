@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
@@ -5,14 +6,14 @@ import Image from 'next/image';
 const About = () => {
 	return (
 		<AboutContainer>
-			<Headshot></Headshot>
-			{/* <Image src=""/> */}
-			<Image
-				src="/photos/B&WHeadshot.jpg"
-				width={400}
-				height={500}
-				alt=""
-			/>
+			<Headshot>
+				<Image
+					src="/photos/B&WHeadshot.jpg"
+					width={400}
+					height={500}
+					alt=""
+				/>
+			</Headshot>
 
 			<TextContainer>
 				<p>
@@ -40,6 +41,7 @@ export default About;
 const AboutContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	width: 66vw;
 `;
 const Headshot = styled.div`
 	/* display: flex;
