@@ -14,10 +14,9 @@ const photos = [
 	'/photos/18.jpg',
 	'/photos/18-golf-swing.jpg',
 	'/photos/PAL_1985.jpg',
-	'/photos/PAL_1990.jpg',
+	'/photos/PAL_0782-1x1.jpg',
 	'/photos/PAL_2078.jpg',
-	'/photos/PAL_0782-1x1.jpg'
-	
+	'/photos/PAL_1990.jpg'
 ];
 
 const MasonryGrid = () => {
