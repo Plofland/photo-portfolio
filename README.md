@@ -1,4 +1,6 @@
-This is my personal portfolio that will serve primarily as a photography portfolio and secondarily as a web developer portfolio.
+# Personal Portfolio
+
+This will serve primarily as a photography portfolio and secondarily as a web developer portfolio.
 
 ## Getting Started Locally
 
@@ -16,35 +18,18 @@ bun dev
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Styling
+
+This uses [styled-components](https://styled-components.com/) as the main styling library.
+
 ## Deployment on Git
 
 In order to deploy this reposity to GitHub pages, go through these steps:
 
-- push up your changes
-- run `npm run deploy`
-    - this runs `npm run build&&gh-pages -d build`
-- then go to this repo on GitHub and navigate to the Settings tab
-- in the left column, click on the Pages tab
-- the Custom domain will be reset to the default github pages * change it back to my domain and click Save
+-   push up your changes via git `git push`
+-   github Actions has been set up so that it will automatically build & deploy any time the main branch is updated
+-   the deloyment can be watched from the [Actions tab](https://github.com/Plofland/photo-portfolio/actions)
 
-## Deploy on Vercel
+## To Do List (kanban board)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## To Do List
-
-- [x] Download a responsive masonry image library (react-responsive-masonry)
-- [x] Put test images in the public folder
-- [x] Display a single image with the react masonry
-- [x] Display a single image with the react responsive masonry
-- [x] once it's working, make the masonry its own component
-- [ ] add a nav bar
-- [ ] add routing to make nav bar functional
-- [ ] add an about me
-- [ ] add an experience section
-- [ ] add a profile image
-- [ ] add a skills section
-- [ ] add a social links section
-- [x] add a css library for styling
+The to-do tickets for this site can be found in this [Notion doc](https://www.notion.so/Website-Redesign-891bf3d5789b435c80cd68a30509f902)
