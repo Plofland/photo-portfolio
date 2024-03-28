@@ -19,7 +19,9 @@ const CombinedNavMenus = () => {
 				/>
 			</MobileMenuIcon>
 			{isOpen && <MobileNavMenu setOpen={setOpen} />}
-			<Navbar />
+			<NavbarContainer>
+				<Navbar />
+			</NavbarContainer>
 		</>
 	);
 };
@@ -30,12 +32,14 @@ const MobileMenuIcon = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	padding: 16px;
-	background-color: ${({ isOpen }) =>
-		isOpen
-			? 'rgba(55, 55, 55, 0.8)'
-			: 'rgba(0, 0, 0, 0)'};
 
+	@media screen and (min-width: 750px) {
+		display: none;
+	}
+`;
+
+const NavbarContainer = styled.div`
 	@media screen and (max-width: 750px) {
-        display: none;
+		display: none;
 	}
 `;
