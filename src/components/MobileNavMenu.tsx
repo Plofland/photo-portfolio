@@ -5,6 +5,9 @@ import styled from 'styled-components';
 const MobileNavMenu = () => {
 	return (
 		<MobileMenu >
+			<MenuItem id="portfolio" href="/portfolio">
+				Portfolio
+			</MenuItem>
 			<MenuItem id="about" href="/about">
 				About
 			</MenuItem>

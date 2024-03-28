@@ -25,7 +25,7 @@ const Navbar = () => {
 				href="/services"
 				rel="noopener noreferrer"
 			>
-				<NavName>Service</NavName>
+				<NavName>Services</NavName>
 			</NavItem>
 			<NavItem
 				href="/contact"

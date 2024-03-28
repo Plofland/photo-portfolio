@@ -10,7 +10,7 @@ const CombinedNavMenus = () => {
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
-			{/* <MobileMenuIcon>
+			<MobileMenuIcon>
 				<Hamburger
 					toggled={isOpen}
 					toggle={setOpen}
@@ -18,12 +18,20 @@ const CombinedNavMenus = () => {
 					distance="lg"
 				/>
 			</MobileMenuIcon>
-			{isOpen && <MobileNavMenu />} */}
-			{!isOpen && <Navbar />}
+			{isOpen && <MobileNavMenu />}
+			{/* {!isOpen && <Navbar />} */}
 		</>
 	);
 };
 
 export default CombinedNavMenus;
 
-const MobileMenuIcon = styled.div``;
+const MobileMenuIcon = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	padding: 16px;
+	background-color: ${({ isOpen }) =>
+		isOpen
+			? 'rgba(55, 55, 55, 0.8)'
+			: 'rgba(0, 0, 0, 0)'};
+`;
