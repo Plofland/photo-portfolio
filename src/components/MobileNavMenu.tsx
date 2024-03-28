@@ -8,7 +8,7 @@ const MobileNavMenu = (
 	return (
 		<MobileMenu>
 			<MenuItem
-				href="/portfolio"
+				href="/"
 				onClick={() => setOpen(false)}
 			>
 				Portfolio
