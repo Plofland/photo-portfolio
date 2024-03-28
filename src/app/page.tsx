@@ -9,17 +9,7 @@ import Navbar from '@/components/Navbar';
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			{/* <MobileMenuIcon>
-					<Hamburger
-						toggled={isOpen}
-						toggle={setOpen}
-						size={42}
-						distance="lg"
-					/>
-				</MobileMenuIcon>
-				{isOpen && <p>TRUE</p>}
-				{isOpen && <MobileNavMenu />} */}
-			{/* <Navbar /> */}
+
 			<MasonryContainer>
 				<MasonryGrid />
 			</MasonryContainer>
