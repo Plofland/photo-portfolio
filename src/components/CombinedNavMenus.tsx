@@ -7,19 +7,19 @@ import MobileNavMenu from '@/components/MobileNavMenu';
 import Navbar from './Navbar';
 
 const CombinedNavMenus = () => {
-	const [isOpen, setOpen] = useState(false);
+	const [isOpen, setOpen] = useState<boolean>(false);
 	return (
 		<>
-			<MobileMenuIcon>
+			{/* <MobileMenuIcon>
 				<Hamburger
 					toggled={isOpen}
 					toggle={setOpen}
-					size={42}
+					size={32}
 					distance="lg"
 				/>
 			</MobileMenuIcon>
-			{isOpen && <MobileNavMenu />}
-			{/* {!isOpen && <Navbar />} */}
+			{isOpen && <MobileNavMenu setOpen={setOpen} />} */}
+			<Navbar />
 		</>
 	);
 };
