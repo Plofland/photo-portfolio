@@ -9,9 +9,12 @@ const About = () => {
 			<Headshot>
 				<Image
 					src="/photos/BWHeadshot.jpg"
-					width={400}
-					height={500}
 					alt="Black and white headshot of Peter looking off camera"
+					sizes="500px"
+					fill
+					style={{
+						objectFit: 'contain'
+					}}
 				/>
 			</Headshot>
 
@@ -45,10 +48,22 @@ const AboutContainer = styled.div`
 	align-items: center;
 	width: 66vw;
 	margin: auto;
-`;
+	border: 1px solid blue;
+
+	@media screen and (max-width: 750px) {
+		width: 100vw;
+	}
+	`;
 const Headshot = styled.div`
-	/* display: flex;
-    flex-direction: column; */
+	position: relative; 
+	width: 750px; 
+	height: 600px;
+	
+	@media screen and (max-width: 750px) {
+		width: 500px;
+		height: 400px;
+	}
+	
 `;
 
 const TextContainer = styled.div`
@@ -56,7 +71,11 @@ const TextContainer = styled.div`
 	flex-direction: column;
 	text-align: center;
 	margin: 0 8em 0 8em;
+	@media screen and (max-width: 750px) {
+		width: 80vw;
+	}
 `;
+
 const Paragraph = styled.div`
 	padding: 2em 0 2em 0;
 `;
