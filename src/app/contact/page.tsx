@@ -10,25 +10,25 @@ const Contact = () => {
 				href="https://github.com/Plofland"
 				target="_blank"
 			>
-				GitHub
+				<TextContainer>GitHub</TextContainer>
 			</SocialLink>
 			<SocialLink
 				href="https://www.linkedin.com/in/peter-lofland/"
 				target="_blank"
 			>
-				LinkedIn
+				<TextContainer>LinkedIn</TextContainer>
 			</SocialLink>
 			<SocialLink
 				href="mailto:ploflan@gmail.com"
 				target="_blank"
 			>
-				Email
+				<TextContainer>Email</TextContainer>
 			</SocialLink>
 			<SocialLink
 				href="https://www.instagram.com/peterlofland/"
 				target="_blank"
 			>
-				Instagram
+				<TextContainer>Instagram</TextContainer>
 			</SocialLink>
 		</ContactContainer>
 	);
@@ -46,5 +46,16 @@ const ContactContainer = styled.div`
 const SocialLink = styled.a`
 	font-family: 'CeraPro', sans-serif;
 	font-size: 24px;
-	margin: 1em 0 1em 0;
+`;
+
+const TextContainer = styled.div`
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	margin: 0.25em 0 0.25em 0%;
+	border: 2px solid whitesmoke;
+	border-radius: 5px;
+	transition: transform 0.2s ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 `;
