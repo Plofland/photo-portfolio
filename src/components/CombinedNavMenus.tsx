@@ -14,7 +14,7 @@ const CombinedNavMenus = () => {
 				<Hamburger
 					toggled={isOpen}
 					toggle={setOpen}
-					size={32}
+					size={28}
 					distance="lg"
 				/>
 			</MobileMenuIcon>
@@ -35,7 +35,7 @@ const Navbars = styled.div`
 const MobileMenuIcon = styled.div`
 	display: flex;
 	justify-content: flex-end;
-	padding: 16px;
+	padding: 8px;
 	position: fixed;
 	z-index: 10;
 	top: 1px;
