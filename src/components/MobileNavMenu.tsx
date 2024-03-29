@@ -51,8 +51,9 @@ const MobileMenu = styled.div`
 	width: 100vw;
 	height: 100vh;
 	position: center;
-	background-color: rgba(55, 55, 55, 0.8);
-	display: flex;
+	/* background-color: rgba(55, 55, 55, 0.8); */
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: saturate(180%) blur(10px);	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

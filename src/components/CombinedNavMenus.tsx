@@ -7,9 +7,9 @@ import MobileNavMenu from '@/components/MobileNavMenu';
 import Navbar from './Navbar';
 
 const CombinedNavMenus = () => {
-	const [isOpen, setOpen] = useState<boolean>(false);
+	const [isOpen, setOpen] = useState<boolean>(true);
 	return (
-		<>
+		<Navbars>
 			<MobileMenuIcon>
 				<Hamburger
 					toggled={isOpen}
@@ -22,16 +22,25 @@ const CombinedNavMenus = () => {
 			<NavbarContainer>
 				<Navbar />
 			</NavbarContainer>
-		</>
+		</Navbars>
 	);
 };
 
 export default CombinedNavMenus;
 
+const Navbars = styled.div`
+	/* border: 1px solid white; */
+	position: relative;
+`;
+
 const MobileMenuIcon = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	padding: 16px;
+	position: absolute;
+	z-index: 10;
+	top: 16px;
+	right: 16px;
 
 	@media screen and (min-width: 750px) {
 		display: none;
