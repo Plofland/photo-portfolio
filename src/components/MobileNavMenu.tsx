@@ -3,57 +3,64 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 interface MobileNavMenuProps {
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const MobileNavMenu: React.FC<MobileNavMenuProps> = (
-	{setOpen}
-) => {
+const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
+	setOpen
+}) => {
 	return (
-		<MobileMenu>
-			<MenuItem
-				href="/"
-				onClick={() => setOpen(false)}
-			>
-				Portfolio
-			</MenuItem>
-			<MenuItem
-				href="/about"
-				onClick={() => setOpen(false)}
-			>
-				About
-			</MenuItem>
-			<MenuItem
-				href="/projects"
-				onClick={() => setOpen(false)}
-			>
-				Projects
-			</MenuItem>
-			<MenuItem
-				href="/services"
-				onClick={() => setOpen(false)}
-			>
-				Services
-			</MenuItem>
-			<MenuItem
-				href="/contact"
-				onClick={() => setOpen(false)}
-			>
-				Contact
-			</MenuItem>
-		</MobileMenu>
+		<MobileMenuContainer>
+			<MobileMenu>
+				<MenuItem
+					href="/"
+					onClick={() => setOpen(false)}
+				>
+					Portfolio
+				</MenuItem>
+				<MenuItem
+					href="/about"
+					onClick={() => setOpen(false)}
+				>
+					About
+				</MenuItem>
+				<MenuItem
+					href="/projects"
+					onClick={() => setOpen(false)}
+				>
+					Projects
+				</MenuItem>
+				<MenuItem
+					href="/services"
+					onClick={() => setOpen(false)}
+				>
+					Services
+				</MenuItem>
+				<MenuItem
+					href="/contact"
+					onClick={() => setOpen(false)}
+				>
+					Contact
+				</MenuItem>
+			</MobileMenu>
+		</MobileMenuContainer>
 	);
 };
 
 export default MobileNavMenu;
 
+const MobileMenuContainer = styled.div`
+	position: relative;
+`;
+
 const MobileMenu = styled.div`
+	position: absolute;
 	width: 100vw;
 	height: 100vh;
 	position: center;
-	/* background-color: rgba(55, 55, 55, 0.8); */
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: saturate(180%) blur(10px);	display: flex;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: saturate(180%) blur(10px);
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
