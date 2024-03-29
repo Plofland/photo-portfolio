@@ -37,10 +37,10 @@ const MobileMenuIcon = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	padding: 16px;
-	position: absolute;
+	position: fixed;
 	z-index: 10;
-	top: 16px;
-	right: 16px;
+	top: 1px;
+	right: 1px;
 
 	@media screen and (min-width: 750px) {
 		display: none;
