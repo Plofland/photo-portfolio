@@ -48,12 +48,13 @@ const AboutContainer = styled.div`
 	align-items: center;
 	width: 66vw;
 	margin: auto;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 
 	@media screen and (max-width: 750px) {
 		width: 100vw;
 	}
-	`;
+`;
+
 const Headshot = styled.div`
 	position: relative; 
 	width: 750px; 
@@ -71,8 +72,12 @@ const TextContainer = styled.div`
 	flex-direction: column;
 	text-align: center;
 	margin: 0 8em 0 8em;
+
 	@media screen and (max-width: 750px) {
 		width: 80vw;
+	}
+	@media screen and (min-width: 1440px) {
+		width: 40vw;
 	}
 `;
 
