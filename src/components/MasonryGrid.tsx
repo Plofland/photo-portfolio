@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Masonry, {
 	ResponsiveMasonry
 } from 'react-responsive-masonry';
+import styled from 'styled-components';
 
 //rearrange these to change the order of the photos
 const photos = [
@@ -30,18 +31,19 @@ const MasonryGrid = () => {
 		>
 			<Masonry gutter="12px">
 				{photos.map((image, i) => (
-					<Image
-						key={i}
-						src={image}
-						layout="responsive"
-						width={1000}
-						height={600}
-						style={{
-							width: '100%',
-							display: 'block'
-						}}
-						alt=""
-					/>
+					<ImageContainer key={i}>
+						<Image
+							src={image}
+							layout="responsive"
+							width={1000}
+							height={600}
+							style={{
+								width: '100%',
+								display: 'block'
+							}}
+							alt=""
+						/>
+					</ImageContainer>
 				))}
 			</Masonry>
 		</ResponsiveMasonry>
@@ -49,3 +51,21 @@ const MasonryGrid = () => {
 };
 
 export default MasonryGrid;
+
+const ImageContainer = styled.div`
+	overflow: hidden;
+/* 
+	@keyframes pulse {
+		from,
+		to {
+			scale: 1;
+		}
+		50% {
+			scale: 1.05;
+		}
+	} */
+
+	/* :hover {
+		animation: pulse 800ms ease-in-out;
+	} */
+`;

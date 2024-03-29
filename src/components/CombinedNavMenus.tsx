@@ -7,7 +7,7 @@ import MobileNavMenu from '@/components/MobileNavMenu';
 import Navbar from './Navbar';
 
 const CombinedNavMenus = () => {
-	const [isOpen, setOpen] = useState<boolean>(true);
+	const [isOpen, setOpen] = useState<boolean>(false);
 	return (
 		<Navbars>
 			<MobileMenuIcon>
