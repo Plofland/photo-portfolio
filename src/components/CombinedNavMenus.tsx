@@ -29,7 +29,6 @@ const CombinedNavMenus = () => {
 export default CombinedNavMenus;
 
 const Navbars = styled.div`
-	/* border: 1px solid white; */
 	position: relative;
 `;
 

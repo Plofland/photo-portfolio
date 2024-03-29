@@ -51,6 +51,7 @@ export default MobileNavMenu;
 
 const MobileMenuContainer = styled.div`
 	position: relative;
+	z-index: 9;
 `;
 
 const MobileMenu = styled.div`
