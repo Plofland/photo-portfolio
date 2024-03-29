@@ -8,7 +8,7 @@ const About = () => {
 		<AboutContainer>
 			<Headshot>
 				<Image
-					src="/photos/B&WHeadshot.jpg"
+					src="/photos/BWHeadshot.jpg"
 					width={400}
 					height={500}
 					alt="Black and white headshot of Peter looking off camera"
