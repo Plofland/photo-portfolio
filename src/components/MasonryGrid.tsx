@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 //rearrange these to change the order of the photos
 const photos = [
+	'/photos/B&WHeadshot.jpg',
 	'/photos/PAL_1730_4x5_headshot.jpg',
 	'/photos/29-4x5-small.jpg',
 	'/photos/15-7x5-small-fav.jpg',
