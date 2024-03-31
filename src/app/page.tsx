@@ -7,10 +7,10 @@ import RippleImage from '@/components/RippleImage';
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			{/* <MasonryContainer>
+			<MasonryContainer>
 				<MasonryGrid />
-			</MasonryContainer> */}
-			<RippleImage />
+			</MasonryContainer>
+			{/* <RippleImage /> */}
 		</main>
 	);
 }
