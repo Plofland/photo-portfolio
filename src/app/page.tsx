@@ -2,14 +2,15 @@
 import styles from './page.module.css';
 import styled from 'styled-components';
 import MasonryGrid from '@/components/MasonryGrid';
-import Navbar from '@/components/Navbar';
+import RippleImage from '@/components/RippleImage';
 
 export default function Home() {
 	return (
 		<main className={styles.main}>
-			<MasonryContainer>
+			{/* <MasonryContainer>
 				<MasonryGrid />
-			</MasonryContainer>
+			</MasonryContainer> */}
+			<RippleImage />
 		</main>
 	);
 }
