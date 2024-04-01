@@ -16,31 +16,34 @@ interface rippleImageProps {
 }
 
 const RippleImage = (props: rippleImageProps) => {
+	console.log({ props });
 	return (
-		<WaterContainer>
-			<WaterWave imageUrl={props.src}>
-				{() => (
-					<TopLayerImage
-						src={props.src}
-						alt="Water Ripple Image"
-						style={{
-							width: '100%',
-							display: 'block'
-						}}
-					/>
-				)}
-			</WaterWave>
-		</WaterContainer>
+		<WaterWave
+			imageUrl={props.src}
+			// @ts-ignore
+			style={{
+				backgroundSize: 'cover'
+			}}
+			//this actually effects the water animation
+			dropRadius={10}
+			perturbance={0.02}
+			interactive={true}
+		>
+			{() => (
+				<TopLayerImage
+					src={props.src}
+					alt="Water Ripple Image"
+					style={{
+						width: '100%',
+						display: 'block'
+					}}
+				/>
+			)}
+		</WaterWave>
 	);
 };
 
 export default RippleImage;
-
-const WaterContainer = styled.div`
-	border: 1px solid skyblue;
-	/* width: 100%;
-  display: block; */
-`;
 
 const TopLayerImage = styled.img`
 	opacity: 0.25;
