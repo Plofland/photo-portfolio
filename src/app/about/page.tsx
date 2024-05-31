@@ -27,7 +27,7 @@ const About = () => {
 
 				<Paragraph>
 					I always love learning anything about
-					software engineering, specifically web development. I'm a fullstack developer with a particular interest in making things that are beautiful and user-friendly.
+					software engineering, specifically web development. I&apos;m a fullstack developer with a particular interest in making things that are beautiful and user-friendly.
 				</Paragraph>
 			</TextContainer>
 		</AboutContainer>
