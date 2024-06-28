@@ -20,13 +20,13 @@ const About = () => {
 
 			<TextContainer>
 				<Paragraph>
-					I am a software developer & photographer
-					with experience in startups & healthtech in New York City. I love
-					working with newer technologies solving problems through code and if I could find the intersection of software development and photography, that would be my dream career.
+					I am a software developer & photographer.<br/>
+					I have a background in startups & healthtech in New York City. I have a passion for portrait photography and I love
+					working with newer technologies solving problems through code. If I find the intersection of software development and photography, that would be my dream career.
 				</Paragraph>
 
 				<Paragraph>
-					I always love learning anything about
+					I always love learning about
 					software engineering, specifically web development. I&apos;m a fullstack developer with a particular interest in making things that are beautiful and user-friendly.
 				</Paragraph>
 			</TextContainer>
