@@ -3,7 +3,6 @@ import Masonry, {
 	ResponsiveMasonry
 } from 'react-responsive-masonry';
 import styled from 'styled-components';
-import RippleImage from './RippleImage';
 
 //rearrange these to change the order of the photos
 const photos = [
@@ -33,11 +32,15 @@ const MasonryGrid = () => {
 			<Masonry gutter="12px">
 				{photos.map((image, i) => (
 					<ImageContainer key={i}>
-						<RippleImage
-							src={image} 
+						<Image
+							src={image}
 							layout="responsive"
 							width={1000}
 							height={600}
+							style={{
+								width: '100%',
+								display: 'block'
+							}}
 							alt=""
 						/>
 					</ImageContainer>

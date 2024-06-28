@@ -2,7 +2,6 @@
 import styles from './page.module.css';
 import styled from 'styled-components';
 import MasonryGrid from '@/components/MasonryGrid';
-import RippleImage from '@/components/RippleImage';
 
 export default function Home() {
 	return (
@@ -10,7 +9,6 @@ export default function Home() {
 			<MasonryContainer>
 				<MasonryGrid />
 			</MasonryContainer>
-			{/* <RippleImage /> */}
 		</main>
 	);
 }
