@@ -65,7 +65,7 @@ const TextContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin: 0 8em 0 8em;
+	margin: 2em 8em 2em 8em;
 
 	@media screen and (max-width: 750px) {
 		width: 80vw;
@@ -76,6 +76,6 @@ const TextContainer = styled.div`
 `;
 
 const Paragraph = styled.div`
-	padding: 2em 0 2em 0;
+	padding: 1em 0 1em 0;
 	color: whitesmoke;
 `;
