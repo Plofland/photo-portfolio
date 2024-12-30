@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import MasonryGrid from '@/app/MasonryGrid';
+import MasonryGrid from './MasonryGrid';
 
 export default function Home() {
 	return (

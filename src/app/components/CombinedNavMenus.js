@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
-import MobileNavMenu from '@/components/MobileNavMenu';
+import MobileNavMenu from './MobileNavMenu';
 import Navbar from './Navbar';
 
 const CombinedNavMenus = () => {

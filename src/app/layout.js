@@ -2,7 +2,7 @@
 
 import GlobalStyles from './globalStyles';
 import { useEffect, useState } from 'react';
-import CombinedNavMenus from '@/components/CombinedNavMenus';
+import CombinedNavMenus from './components/CombinedNavMenus';
 
 const RootLayout = ({ children }) => {
 	const [isMounted, setIsMounted] = useState(false);
