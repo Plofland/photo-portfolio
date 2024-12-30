@@ -2,13 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 
-interface MobileNavMenuProps {
-	setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const MobileNavMenu: React.FC<MobileNavMenuProps> = ({
-	setOpen
-}) => {
+const MobileNavMenu = ({ setOpen }) => {
 	return (
 		<MobileMenuContainer>
 			<MobileMenu>

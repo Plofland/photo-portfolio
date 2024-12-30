@@ -47,7 +47,6 @@ const Container = styled.div`
 	justify-content: center;
 	align-items: flex-end;
 	margin: 6em 0 2em 0;
-	/* border: 2px solid white; */
 `;
 
 const NavName = styled.h2`
@@ -67,8 +66,6 @@ const NavName = styled.h2`
 	&:hover:before {
 		width: 100%;
 	}
-
-	/* border: 1px solid yellowgreen; */
 `;
 
 const NavItem = styled(Link)`

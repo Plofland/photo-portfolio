@@ -28,6 +28,6 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		".types/**/*.ts"
-, "src/app/layout.js", "src/app/MasonryGrid.js", "src/app/page.js", "src/app/contact/page.js", "src/app/projects/page.js", "src/app/about/page.js"	],
+, "src/app/layout.js", "src/app/MasonryGrid.js", "src/app/page.js", "src/app/contact/page.js", "src/app/projects/page.js", "src/app/about/page.js", "src/components/CombinedNavMenus.js", "src/components/MobileNavMenu.js", "src/components/Navbar.js"	],
 	"exclude": ["node_modules"]
 }
