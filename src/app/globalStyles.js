@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
     padding-right: 0;
     box-sizing: border-box;
     font-family: 'Garamond', serif;;
-    background-color: #fefefe;
+    background-color: #080808;
   }
 `;
 

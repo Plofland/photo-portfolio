@@ -51,6 +51,7 @@ const Container = styled.div`
 
 const NavName = styled.h2`
 	position: relative;
+	color: #f5f5f5;
 
 	&:before {
 		content: '';
@@ -59,7 +60,7 @@ const NavName = styled.h2`
 		left: 0;
 		width: 0;
 		height: 2px;
-		background-color: white;
+		background-color: #f5f5f5;
 		transition: width 0.7s ease;
 	}
 
