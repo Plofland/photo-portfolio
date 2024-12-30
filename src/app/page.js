@@ -17,6 +17,7 @@ export default function Home() {
 
 const MasonryContainer = styled.div`
 	width: 90vw;
+	margin: auto;
 	margin-top: 24px;
 
 	/* border: 1px solid red; */
