@@ -68,4 +68,5 @@ const MenuItem = styled(Link)`
 	font-size: 18px;
 	font-style: bold;
 	margin: 8px 0 8px 0;
+	color: #f5f5f5;
 `;
