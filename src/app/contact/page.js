@@ -56,6 +56,7 @@ const TextContainer = styled.div`
 	border: 2px solid whitesmoke;
 	border-radius: 5px;
 	transition: transform 0.2s ease;
+	color: whitesmoke;
 
 	&:hover {
 		transform: scale(1.05);
