@@ -10,7 +10,7 @@ export default function Home() {
 	);
 }
 
-const MasonryContainer = styled.div`
+const MasonryContainer = styled.main`
 	width: 66vw;
 	margin-top: 24px;
 `;
