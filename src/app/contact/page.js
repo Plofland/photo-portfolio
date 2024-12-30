@@ -46,6 +46,8 @@ const ContactContainer = styled.div`
 const SocialLink = styled.a`
 	font-family: 'CeraPro', sans-serif;
 	font-size: 24px;
+	text-decoration: none;
+
 `;
 
 const TextContainer = styled.div`
