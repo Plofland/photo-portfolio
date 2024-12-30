@@ -22,12 +22,12 @@ const About = () => {
 				<Paragraph>
 					I am a software developer & photographer.<br/>
 					I have a background in startups & healthtech in New York City. I have a passion for portrait photography and I love
-					working with newer technologies solving problems through code. If I find the intersection of software development and photography, that would be my dream career.
+					working with newer technologies solving problems through code. The intersection of software development and photography is my dream career.
 				</Paragraph>
 
 				<Paragraph>
 					I always love learning about
-					software engineering, specifically web development. I&apos;m a fullstack developer with a particular interest in making things that are beautiful and user-friendly.
+					software engineering, specifically web development. I&apos;m a fullstack developer with a particular interest in making things with a beautiful design and user-friendly interface.
 				</Paragraph>
 			</TextContainer>
 		</AboutContainer>
@@ -77,4 +77,5 @@ const TextContainer = styled.div`
 
 const Paragraph = styled.div`
 	padding: 2em 0 2em 0;
+	color: whitesmoke;
 `;
