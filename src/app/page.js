@@ -5,11 +5,14 @@ import 'react-photo-album/masonry.css';
 import photos from './photoArray';
 
 export default function Home() {
+	const columnNumber = 
+		(window.innerWidth >= 1248 ? 4 : 
+			(window.innerWidth >= 800 ? 2 : 1));
 	return (
 		<MasonryContainer>
 			<MasonryPhotoAlbum
 				photos={photos}
-				columns={4}
+				columns={columnNumber}
 			/>
 		</MasonryContainer>
 	);
