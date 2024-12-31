@@ -53,7 +53,7 @@ const MobileMenu = styled.div`
 	width: 100vw;
 	height: 100vh;
 	position: center;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(158, 158, 158, 0.8);
 	backdrop-filter: saturate(180%) blur(10px);
 	display: flex;
 	flex-direction: column;
@@ -69,4 +69,5 @@ const MenuItem = styled(Link)`
 	font-style: bold;
 	margin: 8px 0 8px 0;
 	color: #f5f5f5;
+	text-decoration: none;
 `;

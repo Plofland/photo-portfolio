@@ -40,6 +40,7 @@ const MobileMenuIcon = styled.div`
 	z-index: 10;
 	top: 1px;
 	right: 1px;
+	color: #f5f5f5;
 
 	@media screen and (min-width: 750px) {
 		display: none;
