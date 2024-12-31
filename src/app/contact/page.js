@@ -41,13 +41,16 @@ const ContactContainer = styled.div`
 	width: 100vw;
 	align-items: center;
 	flex-direction: column;
+	margin-top: 8em;
+	@media (max-width: 750px) {
+		margin-top: 4em;
+	}
 `;
 
-const SocialLink = styled.a`
+const SocialLink = styled(Link)`
 	font-family: 'CeraPro', sans-serif;
 	font-size: 24px;
 	text-decoration: none;
-
 `;
 
 const TextContainer = styled.div`
