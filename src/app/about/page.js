@@ -20,14 +20,24 @@ const About = () => {
 
 			<TextContainer>
 				<Paragraph>
-					I am a software developer & photographer.<br/>
-					I have a background in startups & healthtech in New York City. I have a passion for portrait photography and I love
-					working with newer technologies solving problems through code. The intersection of software development and photography is my dream career.
+					I am a software developer &
+					photographer.
+					<br />I have a background in startups &
+					healthtech in New York City. I have a
+					passion for portrait photography and I
+					love working with newer technologies
+					solving problems through code. The
+					intersection of software development and
+					photography is my dream career.
 				</Paragraph>
 
 				<Paragraph>
-					I always love learning about
-					software engineering, specifically web development. I&apos;m a fullstack developer with a particular interest in making things with a beautiful design and user-friendly interface.
+					I always love learning about software
+					engineering, specifically web
+					development. I&apos;m a fullstack
+					developer with a particular interest in
+					making things with a beautiful design
+					and user-friendly interface.
 				</Paragraph>
 			</TextContainer>
 		</AboutContainer>
@@ -42,7 +52,6 @@ const AboutContainer = styled.div`
 	align-items: center;
 	width: 66vw;
 	margin: auto;
-	/* border: 1px solid blue; */
 
 	@media screen and (max-width: 750px) {
 		width: 100vw;
@@ -50,15 +59,14 @@ const AboutContainer = styled.div`
 `;
 
 const Headshot = styled.div`
-	position: relative; 
-	width: 750px; 
+	position: relative;
+	width: 750px;
 	height: 600px;
-	
+
 	@media screen and (max-width: 750px) {
 		width: 500px;
 		height: 400px;
 	}
-	
 `;
 
 const TextContainer = styled.div`

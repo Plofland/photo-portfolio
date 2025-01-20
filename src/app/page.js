@@ -29,7 +29,10 @@ export default function Home() {
 
 		// Cleanup event listener on component unmount
 		return () => {
-			window.removeEventListener('resize', updateColumns);
+			window.removeEventListener(
+				'resize',
+				updateColumns
+			);
 		};
 	}, []);
 
