@@ -9,7 +9,7 @@ const About = () => {
 			<Headshot>
 				<Image
 					src="/photos/BWHeadshot.jpg"
-					alt="Black and white headshot of Peter looking off camera"
+					alt="Black and white headshot of Peter looking off camera, resting his head on folded hands"
 					sizes="500px"
 					fill
 					style={{
