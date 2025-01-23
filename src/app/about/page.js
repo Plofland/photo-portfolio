@@ -66,6 +66,7 @@ const Headshot = styled.div`
 	@media screen and (max-width: 750px) {
 		width: 500px;
 		height: 400px;
+		margin-top: 64px;
 	}
 `;
 
