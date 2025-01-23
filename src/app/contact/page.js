@@ -40,20 +40,23 @@ export default Contact;
 
 const ContactContainer = styled.div`
 	display: flex;
-	height: 100vh;
 	justify-content: center;
+
+	@media (max-width: 750px) {
+		height: 100vh;
+	}
 `;
 
 const SocialButtons = styled.div`
 	display: flex;
-	width: 60vw;
+	width: 50vw;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 	margin: 4em 0 4em 0;
 
 	@media (min-width: 751px) {
-		width: 100vw;
+		/* width: 100vw; */
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2em;
@@ -65,6 +68,7 @@ const SocialLink = styled(Link)`
 	font-size: 24px;
 	text-decoration: none;
 	text-align: center;
+
 	@media (max-width: 750px) {
 		width: 100%;
 		padding-bottom: 1em;
