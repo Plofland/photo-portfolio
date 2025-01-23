@@ -39,26 +39,24 @@ const Contact = () => {
 export default Contact;
 
 const ContactContainer = styled.div`
-	width: 80vw;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
 `;
 
 const SocialButtons = styled.div`
 	display: flex;
-	width: 100vw;
+	width: 60vw;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 8em;
 	justify-content: center;
-
-	@media (max-width: 750px) {
-		margin-top: 4em;
-	}
+	margin: 4em 0 4em 0;
 
 	@media (min-width: 751px) {
+		width: 100vw;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2em;
-		margin-top: 8em;
 	}
 `;
 
@@ -69,7 +67,7 @@ const SocialLink = styled(Link)`
 	text-align: center;
 	@media (max-width: 750px) {
 		width: 100%;
-		margin-top: 2em;
+		padding-bottom: 1em;
 	}
 `;
 
