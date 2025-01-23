@@ -19,18 +19,6 @@ const MobileNavMenu = ({ setOpen }) => {
 					About
 				</MenuItem>
 				<MenuItem
-					href="/projects"
-					onClick={() => setOpen(false)}
-				>
-					Projects
-				</MenuItem>
-				<MenuItem
-					href="/services"
-					onClick={() => setOpen(false)}
-				>
-					Services
-				</MenuItem>
-				<MenuItem
 					href="/contact"
 					onClick={() => setOpen(false)}
 				>
@@ -65,9 +53,9 @@ const MobileMenu = styled.div`
 `;
 
 const MenuItem = styled(Link)`
-	font-size: 18px;
+	font-size: 24px;
 	font-style: bold;
-	margin: 8px 0 8px 0;
+	margin: 16px 0 16px 0;
 	color: #f5f5f5;
 	text-decoration: none;
 `;
