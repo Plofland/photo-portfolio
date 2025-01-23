@@ -56,7 +56,6 @@ const SocialButtons = styled.div`
 	margin: 4em 0 4em 0;
 
 	@media (min-width: 751px) {
-		/* width: 100vw; */
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2em;

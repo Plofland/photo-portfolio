@@ -15,18 +15,6 @@ const Navbar = () => {
 			>
 				<NavName>About</NavName>
 			</NavItem>
-			{/* <NavItem
-				href="/projects"
-				rel="noopener noreferrer"
-			>
-				<NavName>Projects</NavName>
-			</NavItem>
-			<NavItem
-				href="/services"
-				rel="noopener noreferrer"
-			>
-				<NavName>Services</NavName>
-			</NavItem> */}
 			<NavItem
 				href="/contact"
 				rel="noopener noreferrer"

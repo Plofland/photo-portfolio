@@ -35,7 +35,7 @@ const MobileMenuContainer = styled.div`
 	position: relative;
 	z-index: 9;
 
-	// this fixes the mobile menu to the top having no gray 	 background, for some reason
+	// the mobile menu has a bug where it has no gray background, this fixes it for some reason
 	border: 0.25px solid gray;
 `;
 
