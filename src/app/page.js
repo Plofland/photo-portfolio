@@ -50,4 +50,9 @@ const MasonryContainer = styled.div`
 	width: 90vw;
 	margin: auto;
 	margin-top: 24px;
+
+	@media screen and (max-width: 750px) {
+		width: 80vw;
+		margin-top: 64px;
+	}
 `;
