@@ -21,13 +21,10 @@ export default function Home() {
 			}
 		};
 
-		// Initial update
 		updateColumns();
-
-		// Event listener for resizing
 		window.addEventListener('resize', updateColumns);
 
-		// Cleanup event listener on component unmount
+		// Cleanup event listener on unmount
 		return () => {
 			window.removeEventListener(
 				'resize',
@@ -41,6 +38,11 @@ export default function Home() {
 			<MasonryPhotoAlbum
 				photos={photos}
 				columns={columnNumber}
+				render={{
+					image: (props) => (
+						<CustomImage {...props} />
+					)
+				}}
 			/>
 		</MasonryContainer>
 	);
@@ -54,5 +56,16 @@ const MasonryContainer = styled.div`
 	@media screen and (max-width: 750px) {
 		width: 80vw;
 		margin-top: 64px;
+	}
+`;
+
+const CustomImage = styled.img`
+	transition: transform 0.3s ease;
+	width: 100%;
+	height: auto;
+	display: block;
+
+	&:hover {
+		transform: scale(1.05);
 	}
 `;
