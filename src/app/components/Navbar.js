@@ -52,13 +52,20 @@ const NavName = styled.h2`
 		bottom: 0;
 		left: 0;
 		width: 0;
-		height: 2px;
+		height: 3px;
 		background-color: #f5f5f5;
 		transition: width 0.7s ease;
+		filter: blur(1px);
 	}
 
 	&:hover:before {
 		width: 100%;
+		box-shadow: 
+			0 0 10px #f5f5f5,
+			0 0 20px #00f5f5,
+			0 0 40px #00f5f5,
+			0 0 80px #00f5f5,
+			0 0 120px #00f5f5;
 	}
 `;
 
