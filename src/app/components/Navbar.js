@@ -41,6 +41,11 @@ const NavName = styled.h2`
 	position: relative;
 	color: #f5f5f5;
 
+	text-shadow: 0 0 5px #f5f5f5, 0 0 10px #f5f5f5,
+		0 0 20px #f5f5f5, 0 0 40px #00f5f5, 0 0 80px #00f5f5,
+		0 0 90px #00f5f5, 0 0 100px #00f5f5,
+		0 0 150px #00f5f5;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -65,6 +70,7 @@ const NavItem = styled(Link)`
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
+	font-size: 24px;
 
 	h2 {
 		margin: 0;
