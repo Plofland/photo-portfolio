@@ -16,6 +16,8 @@ const CombinedNavMenus = () => {
 					toggle={setOpen}
 					size={28}
 					distance="lg"
+					rounded
+					// color='#FF0000'
 				/>
 			</MobileMenuIcon>
 			{isOpen && <MobileNavMenu setOpen={setOpen} />}
@@ -33,6 +35,7 @@ const Navbars = styled.div`
 `;
 
 const MobileMenuIcon = styled.div`
+// icon layout
 	display: flex;
 	justify-content: flex-end;
 	padding: 8px;
@@ -41,6 +44,14 @@ const MobileMenuIcon = styled.div`
 	top: 1px;
 	right: 1px;
 	color: #f5f5f5;
+
+	// icon visual flair
+	.hamburger-react > div {
+		div {
+			box-shadow: 0 0 5px #f5f5f5, 0 0 10px #00f5f5,
+				0 0 20px #00f5f5, 0 0 40px #00f5f5;
+		}
+	}
 
 	@media screen and (min-width: 750px) {
 		display: none;
