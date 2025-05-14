@@ -1,43 +1,20 @@
 'use client';
-import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MasonryPhotoAlbum } from 'react-photo-album';
 import 'react-photo-album/masonry.css';
 import photos from './photoArray';
 
 export default function Home() {
-	const [columnNumber, setColumnNumber] = useState(1);
-
-	useEffect(() => {
-		// Function to determine column numbers based on window width
-		const updateColumns = () => {
-			const width = window.innerWidth;
-			if (width >= 1248) {
-				setColumnNumber(4);
-			} else if (width >= 800) {
-				setColumnNumber(2);
-			} else {
-				setColumnNumber(1);
-			}
-		};
-
-		updateColumns();
-		window.addEventListener('resize', updateColumns);
-
-		// Cleanup event listener on unmount
-		return () => {
-			window.removeEventListener(
-				'resize',
-				updateColumns
-			);
-		};
-	}, []);
 
 	return (
 		<MasonryContainer>
 			<MasonryPhotoAlbum
 				photos={photos}
-				columns={columnNumber}
+				columns={(containerWidth) => {
+					if (containerWidth < 400) return 1;
+					if (containerWidth < 800) return 2;
+					return 4;
+				}}
 				render={{
 					image: (props) => (
 						<CustomImage {...props} />
