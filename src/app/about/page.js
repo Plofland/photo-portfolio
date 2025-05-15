@@ -12,9 +12,7 @@ const About = () => {
 					alt="Black and white headshot of Peter looking off camera, resting his head on folded hands"
 					sizes="500px"
 					fill
-					style={{
-						objectFit: 'contain'
-					}}
+					style={{ objectFit: 'contain' }}
 				/>
 			</Headshot>
 
