@@ -13,7 +13,7 @@ export default function Home() {
 				columns={(containerWidth) => {
 					if (containerWidth < 400) return 1;
 					if (containerWidth < 800) return 2;
-					return 4;
+					return 3;
 				}}
 				render={{
 					image: (props) => (
