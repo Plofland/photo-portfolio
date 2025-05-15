@@ -69,8 +69,10 @@ const CustomImage = styled.img`
 	height: auto;
 	display: block;
 
-	&:hover {
-		transform: scale(1.05);
+	@media (min-width: 750px) {
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 `;
 
