@@ -93,4 +93,10 @@ const TextContainer = styled.div`
 			transition: ease-in-out 0.2s;
 		}
 	}
+
+	@media (max-width: 750px) {
+		box-shadow: 0 0 10px #f5f5f5, 0 0 20px #00f5f5,
+				inset 0 0 5px #00f5f5,
+				inset 0 0 25px #00f5f5;
+	}
 `;
