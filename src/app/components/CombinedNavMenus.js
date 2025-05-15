@@ -17,7 +17,6 @@ const CombinedNavMenus = () => {
 					size={28}
 					distance="lg"
 					rounded
-					// color='#FF0000'
 				/>
 			</MobileMenuIcon>
 			{isOpen && <MobileNavMenu setOpen={setOpen} />}
@@ -35,7 +34,7 @@ const Navbars = styled.div`
 `;
 
 const MobileMenuIcon = styled.div`
-// icon layout
+	// icon layout
 	display: flex;
 	justify-content: flex-end;
 	padding: 8px;
