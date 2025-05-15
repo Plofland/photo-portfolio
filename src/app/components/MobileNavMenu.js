@@ -56,9 +56,9 @@ const MobileMenu = styled.div`
 `;
 
 const MenuItem = styled(Link)`
-	font-size: 24px;
+	font-size: 36px;
 	font-style: bold;
-	margin: 16px 0 16px 0;
+	margin: 32px 0 32px 0;
 	color: #f5f5f5;
 	text-decoration: none;
 `;
