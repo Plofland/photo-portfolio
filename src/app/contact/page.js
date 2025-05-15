@@ -80,6 +80,7 @@ const TextContainer = styled.div`
 	border: 2px solid whitesmoke;
 	border-radius: 5px;
 	color: whitesmoke;
+	text-shadow: 0 0 4px #f5f5f5;
 
 	@media (min-width: 750px) {		
 		&:hover {
