@@ -79,10 +79,17 @@ const TextContainer = styled.div`
 	margin: 0.25em 0 0.25em 0%;
 	border: 2px solid whitesmoke;
 	border-radius: 5px;
-	transition: transform 0.2s ease;
 	color: whitesmoke;
 
-	&:hover {
-		transform: scale(1.05);
+	@media (min-width: 750px) {		
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 10px #f5f5f5, 0 0 20px #00f5f5,
+				0 0 40px #00f5f5, 0 0 80px #00f5f5,
+				0 0 120px #00f5f5, inset 0 0 10px #f5f5f5,
+				inset 0 0 5px #00f5f5,
+				inset 0 0 40px #00f5f5;
+			transition: ease-in-out 0.2s;
+		}
 	}
 `;
